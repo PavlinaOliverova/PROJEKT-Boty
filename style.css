@@ -29,8 +29,8 @@ body {
 
 .rodic {
     display: flex;
-    margin: 50%;
-    width: 345px;
+    margin: 20%;
+    width: 670px;
     height: 440px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px 0 0 10px;
@@ -49,11 +49,13 @@ body {
 
 
 .bilykontejner{
+    flex: 0 0 345px;
     width: 345px;
     height: 440px;
     border-radius: 0 10px 10px 0;
     background-color: white;
-
+    position: relative;
+    padding: 30px;
 }
 
 .logo{margin: 30px;
@@ -99,27 +101,66 @@ body {
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
+    
 }
 
 .podnadpis{
+    color: #959595;
+
     
 
 }
 
 .popis{
-    color: #959595;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #06d7c1;
+    margin-bottom: 0;
 }
 
 .velikost{
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 30px;
+    border-top: #06d7c1;
+    margin-top: 0;
 }
 
 .seznam{
-    
-    
+    display:flex;
+    margin: 0;
+    padding-bottom: 30px;
+    padding-left: 0;   
+}
+
+
+.seznam li{
+    flex-grow: 6;
+    flex-basis: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.vybrana{
+    color: #f15f42;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid #f15f42;
+    background-color: white;
 }
 
 .odkaz{
-    
-    
+    box-sizing: border-box;
+    background-color: #f15f42;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
+
+a:hover{
+    color: black;}
